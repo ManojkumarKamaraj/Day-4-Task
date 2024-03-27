@@ -200,25 +200,40 @@ let palid = (arr)=>{
                     // Anonymous
 /*
 let anony = function (ar1,ar2){
-    let ar3=ar1.concat(ar2)
-    let prev_index = Math.floor(ar3.length/2)-1
-    let next_index = Math.floor(ar3.length/2)
-    let median = (ar3[prev_index]+ar3[next_index])/2;
-    return median
+    function compareFn(a, b) {
+        return a - b;
+      }
+        ar1=ar1.sort(compareFn)
+        ar2=ar2.sort(compareFn)
+        console.log(`Sorted First Array${ar1}`);
+        console.log(`Sorted Second Array${ar2}`);
+        let ar3=ar1.concat(ar2)
+        let prev_index = Math.floor(ar3.length/2)-1
+        let next_index = Math.floor(ar3.length/2)
+        let median = (ar3[prev_index]+ar3[next_index])/2;
+        return median
 };
-console.log(anony([1,2,3,4,15],[1,2,3,4,5]));
+console.log(anony([6,4,67,4,8,3],[17,12,13,4,5,61]));
 */
+
                     // IFFE Function
-                    /*
+ /*
 (
     function (ar1,ar2){
+        function compareFn(a, b) {
+        return a - b;
+        }
+        console.log(`Sorted First Array${ar1}`);
+        console.log(`Sorted Second Array${ar2}`);
+        ar1=ar1.sort(compareFn)
+        ar2=ar2.sort(compareFn)
         let ar3=ar1.concat(ar2)
         let prev_index = Math.floor(ar3.length/2)-1
         let next_index = Math.floor(ar3.length/2)
         let median = (ar3[prev_index]+ar3[next_index])/2;
         console.log(`median value is ${median}`);
     }
-)([1,2,3,4,15],[1,2,3,4,5])
+)([6,4,67,4,8,3],[17,12,13,4,5,61])
 */
 
                     //Remove duplicates from an array
